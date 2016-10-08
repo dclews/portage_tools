@@ -1,0 +1,17 @@
+[package]
+name = "portage_tools"
+version = "0.1.0"
+authors = ["dclews <dan.clews247@gmail.com>"]
+
+[dependencies]
+clippy = "*"
+regex = "*"
+
+[lib]
+name = "portage_tools"
+crate-type = ["rlib"]
+path = "src/lib.rs"
+
+[[bin]]
+name = "epenv"
+path = "src/bin/epenv.rs"
